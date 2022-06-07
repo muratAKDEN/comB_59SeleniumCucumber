@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",  // features director nin yolunu kopyaladim
         glue="stepDefinitions",     //stepDefinitions package nin yolunu kopyaladim
-        tags="@wip",
+        tags="@parametre",
         dryRun = false
 
 )

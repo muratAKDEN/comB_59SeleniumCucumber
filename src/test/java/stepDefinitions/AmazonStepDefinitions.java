@@ -39,7 +39,7 @@ public class AmazonStepDefinitions {
     @Then("sonuclarin Java icerdigini test eder")
     public void sonuclarin_java_icerdigini_test_eder() {
         String arananKelime="Java";
-        String actualAramaSonucStr= amazonPage.aramaSonucu.getText();
+        String actualAramaSonucStr=amazonPage.aramaSonucu.getText();
 
         Assert.assertTrue(actualAramaSonucStr.contains(arananKelime));
     }
@@ -58,4 +58,17 @@ public class AmazonStepDefinitions {
     }
 
 
+    @And("kullanici {string} icin arama yapar")
+    public void kullaniciIcinAramaYapar(String istenenKelime) {
+        amazonPage.aramaKutusu.sendKeys(istenenKelime + Keys.ENTER);
+
+    }
+
+    @And("sonuclarin {string} icerdigini test eder")
+    public void sonuclarinIcerdiginiTestEder(String istenenKelime) {
+        String arananKelime=istenenKelime;
+        String actualAramaSonucStr= amazonPage.aramaSonucu.getText();
+
+        Assert.assertTrue(actualAramaSonucStr.contains(arananKelime));
+    }
 }
