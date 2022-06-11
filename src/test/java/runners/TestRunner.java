@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features",  // features directory nin yolunu kopyaladim
         glue="stepDefinitions",     //stepDefinitions package nin yolunu kopyaladim
-        tags="@parametre",
+        tags="@auto",
         dryRun = false
 
 )

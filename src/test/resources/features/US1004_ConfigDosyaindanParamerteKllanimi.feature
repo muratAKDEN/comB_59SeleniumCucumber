@@ -1,5 +1,5 @@
 Feature: US1004 kullanici parametre ile coniguration file i kullanabilmeli
-  @config
+  @pr2
 
   Scenario:TC07 configuration properties dosyasindan parametre kullanimi
 

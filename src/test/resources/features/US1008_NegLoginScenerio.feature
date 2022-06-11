@@ -1,8 +1,9 @@
 Feature: US1008 kullanici farkli yanlis sifre ve username le giris yapamaz
 @negative
   Scenario Outline: TC13 yanlis username ve password ile giris yapilamazü
-    Given kullanici "HMCUrl" anasayfasinda
-    Then Log in yazisina tiklar
+
+Given kullanici "HMCUrl" sayfasinda
+  Then Log in yazisina tiklar
   And gecersiz username olarak "<username>" girer
     And gecersiz password olarak "<password>" girer
     And Login butonuna basar
