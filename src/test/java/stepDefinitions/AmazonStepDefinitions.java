@@ -98,4 +98,8 @@ public class AmazonStepDefinitions {
             throw new RuntimeException(e);
         }
     }
+
+    @And("startDate bolumune {string} girer")
+    public void startdateBolumuneGirer(String arg0) {
+    }
 }
